@@ -1,0 +1,231 @@
+:root{
+    --primarycolor: #6affda;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'segoe UI',arial,sans-serif;
+    background: #0a192f;
+    color: #ccd6f6;
+    line-height: 1.6;
+}
+
+/*          NAV        */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    background: #0a192f;
+    z-index: 10;
+}
+.logo {
+    font-size: 24px;
+    font-weight: 900;
+    color: #fff;
+    text-decoration: none;
+}
+.logo span {
+    color: var(--primarycolor);
+}
+.links a {
+    color: #ccd6f6;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 14px;
+}
+.btn-nav {
+    border: 1px solid var(--primarycolor);
+    color: var(--primarycolor)!important;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+/*                 HERO               */
+
+header {
+    padding: 80px 8% 60px;
+    max-width: 1000px;
+    margin: auto;
+}
+.hello {
+    color: var(--primarycolor);
+}
+header h1 {
+    font-size: 52px;
+    color: #fff;
+    line-height: 1.1;
+}
+header h2 {
+    font-size: 42px;
+    color: #8892b0;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+.desc {
+    max-width: 600px;
+    color: #8892b0;
+}
+.cta {
+    margin: 30px 0;
+    display: flex;
+    gap: 15px;
+}
+.btn-primary {
+    background: var(--primarycolor);
+    color: #0a192f;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.btn-second {
+    border: 1px solid var(--primarycolor);
+    color: var(--primarycolor);
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+.stats b {
+    display: block;
+    color: #fff;
+    font-size: 22px;
+}
+.stats span {
+    font-size: 13px;
+    color: #8892b0;
+}
+
+                            /*   A PROPOS   */
+
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 8%;
+}
+.titre-section {
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.titre-section span {
+    color: var(--primarycolor);
+}
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 30px;
+}
+.about-card {
+    background: #112240;
+    padding: 20px;
+    border-radius: 10px;
+}
+.about-card p {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.skills-card {
+    background: #112240;
+    padding: 20px;
+    border-radius: 10px;
+}
+.skills-card h3 {
+    color: #fff;
+}
+.bar {
+    background: #233554;
+    height: 8px;
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.bar i {
+    display: block;
+    height: 100%;
+    background: var(--primarycolor);
+}
+
+/*                                    PROJETS                 */
+
+.projet {
+    background: #112240;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+.projet h3 {
+    color: #fff;
+    margin: 15px 0 10px;
+}
+.tech {
+    color: var(--primarycolor);
+    font-size: 13px;
+    margin: 12px 0;
+}
+.projet a {
+    color: var(--primarycolor);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/*                          CONTACT                              */
+
+footer {
+    text-align: center;
+    padding: 80px 8% 40px;
+}
+footer P{
+    margin-bottom: 25px;
+}
+footer .btn-primary {
+    display: inline-block;
+    margin-top: 10px;
+}
+footer h3 {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.socials {
+    margin-top: 20px;
+}
+.socials a {
+    color: #ccd6f6;
+    text-decoration: none;
+    margin: 0 8px;
+}
+.copy {
+    margin-top: 40px;
+    font-size: 12px;
+    color: #8892b0;
+}
+@media (max-width: 700px) {
+    header h1{
+        font-size: 34px;
+    }
+    header h2{
+        font-size: 28px;
+    }
+    .about-grid, .skills-grid, .projets-row{
+        grid-template-columns: 1fr;
+    }
+    .links a:not(.btn-nav){
+        display: none;
+    }
+}
